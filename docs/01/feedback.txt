@@ -1,0 +1,13 @@
+Bitte beheben Sie folgende(s) Problem(e) bis spätestens Montag 18.05.20 um 7:00 Uhr, andernfalls verlieren Sie Ihren Praktikumsplatz:
+
+-	zu Abnahmekriterium 7:
+	Die Implementierung des Matchings (Fragen den Kategorien zuordnen) hat derzeit keine Laufzeitkomplexität innherhalb von O(n * log(n)).
+	-> Bitte stellen Sie sicher, dass das Abnahmekriterium vollständig erfüllt ist.
+
+
+Update: 18.05.20
+Ich gebe Ihnen das Testat. Allderdings bin ich schockiert!
+Sie verwenden zwar einen existierenden suchalgo aber sortieren jedes mal die liste. Die performance ihrer impelmentierung ist damit schlecht!
+einfache Verwendung einer HashMap hätte zu besseren Laufzeiten und bessere Code Qualität gesorgt.
+
+Bitte für den nächsten Praktikumstermin aufräumen. Punkt 1 möchte ich von Ihnen unaufgefordert gezeigt bekommen.

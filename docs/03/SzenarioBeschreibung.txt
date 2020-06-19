@@ -1,0 +1,13 @@
+Wissentest Beschreibung
+
+- Game started.
+- Display the main menu with the title.
+- Enter a player name, generate player ID and save in Database. if the name already exist in Database, update the existing player’s game.
+- Display all categories.
+- The player chooses a minimum of 2 categories.
+- The player enters how many questions per category.
+- Questions will be randomized and saved in an Array.
+- Questions are displayed with their multiple choices.
+- The player enters the right answer to each question. The answers will be stored.
+- Calculate score, displayed it, and store in the database to the corresponding game.
+- Game over. Return to the main menu.

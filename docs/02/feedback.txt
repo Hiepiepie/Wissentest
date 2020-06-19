@@ -1,0 +1,7 @@
+Ich habe keine gravierenden Mängel mehr an Ihrem Praktikum gefunden und in meiner Liste die Aufgabe als bestanden markiert.
+
+Viel Erfolg im nächsten Praktikum! \(^_^)/
+
+~~~~~~~~
+Anmerkung: Der Name der Kategorie (Category) wurde nicht als unique annotiert. Bitte bis zum nächsten Praktikumstermin anpassen.
+Anmerkung: Ihre Tests scheinen lokal nicht zu laufen. Bitte überprüfen Sie deren Funktionalität im eigenen Interesse bis zum nächsten Praktikumstermin.

@@ -1,0 +1,42 @@
+Bitte beheben Sie folgende(s) Problem(e) bis spätestens Montag 15.06.20 um 7:00 Uhr, andernfalls verlieren Sie Ihren Praktikumsplatz:
+
+-	Ihre Anwendung stürzt ab, wenn mehr als 1 Question pro Category angefordert wird.
+
+>>> BEISPIEL ZUR REPRODUKTION:
+1: Re-read csv
+2: Play test
+3: Create mass data
+4: Analyze data
+0: Quit
+2
+
+Enter your name :
+Tester
+
+List all available Categories :
+1 High-Society
+[...]
+
+Please choose at least 2 categories (example= 5 11 9):
+9 30
+
+Categories you've chosen :
+9 Physik
+30 Technik
+
+Please select number of question for each category (minimum 1) :
+2
+java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:388)
+	at de.hda.fbi.db2.stud.impl.GameApi.getQuestions(GameApi.java:83)
+	at de.hda.fbi.db2.stud.impl.GameApi.interactiveGetQuestions(GameApi.java:163)
+	at de.hda.fbi.db2.controller.MenuController.playTest(MenuController.java:81)
+	at de.hda.fbi.db2.controller.MenuController.readInput(MenuController.java:50)
+	at de.hda.fbi.db2.controller.MenuController.showMenu(MenuController.java:32)
+	at de.hda.fbi.db2.controller.Controller.startMenu(Controller.java:190)
+	at de.hda.fbi.db2.Main.main(Main.java:28)
+[...]
+
+Update: 15.06.20
+Ich habe keine gravierenden Mängel mehr an Ihrem Praktikum gefunden und in meiner Liste die Aufgabe als bestanden markiert.
+

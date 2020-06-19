@@ -1,0 +1,57 @@
+class Question:
+	@Entity
+	@Table(name = “Question”, schema = ”Praktikum”)
+
+	@Id
+	@OrderBy
+
+	@ManyToOne
+
+	@ElementCollection
+	@CollectionTable(name=”AnsChoice”,  schema = "Praktikum")
+	@OrderColumn(name=”index”)
+
+
+
+class Category:
+	@Entity
+	@Table(name = “Category”, schema = ”Praktikum”)
+
+	@Id
+	@GeneratedValue
+	@OrderBy
+
+	@Column(unique = true)
+
+	@OneToMany (mappedBy = "category")
+
+
+
+class Game:
+  @Entity
+  @Table(name = “Game”, schema = ”Praktikum”)
+
+  @Id
+  @GeneratedValue
+  @OrderBy
+
+  @ManyToOne
+
+  @ElementCollection
+  @CollectionTable(name=”selectedQuestion”, joinColumns=@JoinColumn(name="gameId"),  schema = "Praktikum")
+  @MapKeyColumn(name="questionId")
+  @Column(name="selectedAnswer")
+
+
+
+class Player:
+  @Entity
+  @Table(name = “Player”, schema = ”Praktikum”)
+
+  @Id
+  @GeneratedValue
+  @OrderBy
+
+  @Column(unique = true)
+
+  @OneToMany(mappedBy = "games")

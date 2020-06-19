@@ -1,0 +1,23 @@
+class Question:
+	@Entity
+	@Table(name = “Question”, schema = ”Praktikum”)
+
+	@Id
+
+	@ManyToOne
+
+	@ElementCollection
+	@CollectionTable(name=”AnsChoices”)
+	@OrderColumn(name=”index”)
+
+
+class Category:
+	@Entity
+	@Table(name = “Category”, schema = ”Praktikum”)
+
+	@Id
+	@GeneratedValue
+
+	@OneToMany (mappedBy = "category")
+
+	@Column
